@@ -1,0 +1,14 @@
+.in-and-ing li {
+  display: inline-block;
+  list-style: none;
+
+}
+
+#ins {
+  list-style: none;
+}
+
+
+.the-link {
+  text-decoration: none;
+}

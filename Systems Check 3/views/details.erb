@@ -1,0 +1,24 @@
+<div class="page-header">
+  <h1><%= @current[0]['name']%></h1>
+</div>
+<div class="well well-lg">
+  <%=@current[0]['description']%>
+</div>
+
+
+<div class="instructions">
+  <h3 id="ins">Instructions</h3>
+  <p><%= @current[0]['instructions']%></p>
+</div>
+<div class="ingredients">
+  <h3>Ingredients</h3>
+  <ul><% @ingredients.each do |row| %>
+  <li><%=row['name']%></li>
+      <%end%>
+  </ul>
+</div>
+
+
+
+
+

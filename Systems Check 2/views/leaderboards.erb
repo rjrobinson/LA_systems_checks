@@ -1,0 +1,12 @@
+<h1 class="leaderboard">LEADERBOARDS</h1>
+<ol>
+<%@sorted.each do |team, scores| %>
+<li>
+  <ul>
+    <li class="leaderteam"><%="#{team}"%></li>
+    <li class="winloss"><%="WIN: #{scores[:wins]} LOSS:#{scores[:losses]}"%></li>
+  </ul>
+</li>
+<%end %>
+</ol>
+

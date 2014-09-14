@@ -1,0 +1,5 @@
+<% @team_data.each do |team, scores| %>
+<h1 class='team_name'><%=team%></h1>
+<h3 class="win">WINS:<%=scores[:wins]%></h3>
+<h3 class="loss">LOSS:<%=scores[:losses]%></h3>
+<%end%>

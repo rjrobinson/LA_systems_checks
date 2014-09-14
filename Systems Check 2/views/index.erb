@@ -1,0 +1,8 @@
+<h1>Welcome to the NFL</h1>
+<h2><a href="/leaderboard">LEADERBOARD</a></h2>
+<h3>The only 4 teams playing this year due to salary demand!</h3>
+<ul>
+<%@team_names.each do |team|%>
+<li class="nav_item"><a href="/team/<%=team%>"><%="#{team}"%></a></li>
+<%end%>
+</ul>
